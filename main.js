@@ -1,5 +1,5 @@
 const companies = [
-    {name: "Company One", category: "Finance", start: 1981, end: 2003},
+    {name: "Company One", category: "Finance", start: 1981, end: 2004},
     {name: "Company Two", category: "Retail", start: 1992, end: 2008},
     {name: "Company Three", category: "Auto", start: 1999, end: 2007},
     {name: "Company Four", category: "Retail", start: 1989, end: 2010},
@@ -15,6 +15,24 @@ const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
 
 
 // reduce()
+
+// get total years for all companies
+
+// arrow function
+const companyYears = companies.reduce((total, company) => (total + (company.end - company.start)), 0);
+console.log(companyYears);
+
+// es5
+const totalYears = companies.reduce(function(total, company){
+
+    // add current company lifetime to total
+    return total + (company.end - company.start);
+
+}, 0);
+console.log(totalYears);
+
+
+
 // takes function and start value 
 
 // arrow function
