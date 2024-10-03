@@ -14,6 +14,19 @@ const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
 
 
 
+// filter companies in Retail category
+const retailCompanies = companies.filter(function(company) {
+
+    if(company.category === 'Retail'){
+
+        return true;
+    }
+
+});
+
+console.log(retailCompanies);
+
+
 // filter age 21 and over 
 
 
