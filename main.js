@@ -14,6 +14,18 @@ const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
 
 
 
+// Combining Array Methods
+
+const combined = ages 
+    .map(age => age * 2) // mulitply each age by 2
+    .filter(age => age >= 40) // filter age 40 & older
+    .sort((a, b) => a - b) // sort in ascending order
+    .reduce((total, age) => (total + age), 0); // get total age
+
+console.log(combined);
+
+
+
 // reduce()
 
 // get total years for all companies
