@@ -13,7 +13,9 @@ const companies = [
 const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
 
 
-
+// Get companies lasted at least 10 years
+const decadeCompanies = companies.filter(company => (company.end - company.start) >= 10);
+console.log(decadeCompanies);
 
 // Get companies started in 1980s
 const eightiesCompanies = companies.filter(company => (company.start >= 1980 && company.start < 1990));
