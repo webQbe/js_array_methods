@@ -13,6 +13,23 @@ const companies = [
 const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
 
 
+// map()
+// create array of company names using map()
+
+const companyNames = companies.map(function(company){
+
+    return company.name;
+
+});
+
+console.log(companyNames);
+
+
+
+
+
+
+// filter()
 // Get companies lasted at least 10 years
 const decadeCompanies = companies.filter(company => (company.end - company.start) >= 10);
 console.log(decadeCompanies);
@@ -81,7 +98,7 @@ console.log(canDrink);
 
 
 
-
+// forEach()
 // loop through companies
 // display data from each company
 
