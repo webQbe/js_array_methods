@@ -14,8 +14,19 @@ const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
 
 
 // map()
-// create array of company names using map()
+// create arrays using map()
 
+// create array of square roots of ages
+const ageSqrt = ages.map(age => Math.sqrt(age));
+console.log(ageSqrt);
+
+
+// create a list of company details
+// arrow function
+const coMap = companies.map(company => `${company.name} [${company.start} - ${company.end}]`);
+console.log(coMap);
+
+// es5
 const companyMap = companies.map(function(company){
 
     // output company name, start and end years
