@@ -16,6 +16,10 @@ const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
 // map()
 // create arrays using map()
 
+// create array of doubled ages
+const ageDoubled = ages.map(age => age * 2);
+console.log(ageDoubled);
+
 // create array of square roots of ages
 const ageSqrt = ages.map(age => Math.sqrt(age));
 console.log(ageSqrt);
