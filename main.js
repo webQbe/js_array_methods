@@ -16,14 +16,27 @@ const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
 
 // filter age 21 and over 
 
-// using for loop
+// using filter()
+const can_Drink = ages.filter(function(age){
 
+    if(age >= 21){
+
+        return true;
+    }
+
+})
+
+console.log(can_Drink);
+
+
+// using for loop
 let canDrink = [];
 
 for(i = 0; i < ages.length; i++){
     
     // filter ages 
     if(ages[i] >= 21 ){
+
         // if true add current age to array
         canDrink.push(ages[i]);
         
@@ -39,6 +52,16 @@ console.log(canDrink);
 // loop through companies
 // display data from each company
 
+
+// using forEach()
+companies.forEach(function(company){
+
+    // log company name
+    console.log(company.name);
+
+});
+
+
 // using for loop
 for(let i = 0; i < companies.length; i++){
 
@@ -47,13 +70,6 @@ for(let i = 0; i < companies.length; i++){
 
 }
 
-// forEach
-companies.forEach(function(company){
-
-    // log company name
-    console.log(company.name);
-
-});
 
 
 
