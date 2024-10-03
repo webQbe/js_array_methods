@@ -14,6 +14,24 @@ const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
 
 
 
+// reduce()
+
+// add all ages togther 
+
+// using for loop
+let ageSum = 0;
+
+for(let i = 0; i < ages.length; i++){
+
+    // add current age to total
+    ageSum += ages[i];  
+
+}
+
+console.log(ageSum);
+
+
+
 // sort()
 
 // sort ages 
