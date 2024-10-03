@@ -14,7 +14,19 @@ const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
 
 
 
-// filter companies in Retail category
+
+// Get companies started in 1980s
+const eightiesCompanies = companies.filter(company => (company.start >= 1980 && company.start < 1990));
+console.log(eightiesCompanies);
+
+
+// Get companies in Retail category
+
+// using arrow function
+const Retailers = companies.filter(company => company.category === 'Retail');
+console.log(Retailers);
+
+// using ES5 function
 const retailCompanies = companies.filter(function(company) {
 
     if(company.category === 'Retail'){
@@ -23,7 +35,6 @@ const retailCompanies = companies.filter(function(company) {
     }
 
 });
-
 console.log(retailCompanies);
 
 
